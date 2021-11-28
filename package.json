@@ -1,0 +1,26 @@
+{
+  "name": "students_node_express_mongo",
+  "version": "1.0.0",
+  "description": "Backend Application with Express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "env-cmd -f ./config/dev.env nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeaEid/students_node_express_mongo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LeaEid/students_node_express_mongo/issues"
+  },
+  "homepage": "https://github.com/LeaEid/students_node_express_mongo#readme",
+  "dependencies": {
+    "env-cmd": "^10.1.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.12.2",
+    "nodemon": "^2.0.15"
+  }
+}
