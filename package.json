@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "env-cmd -f ./config/dev.env nodemon index.js"
+    "start": "env-cmd -f ./config/dev.env nodemon index.js --host 0.0.0.0 --port 3000"
   },
   "repository": {
     "type": "git",

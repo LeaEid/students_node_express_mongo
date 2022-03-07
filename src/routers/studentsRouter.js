@@ -15,8 +15,21 @@ router.post('/students', auth, async (req, res) => {
 })
 
 // Get Student By ID
-router.get('/students/:id', auth, async (req, res) => {
+router.get('/students', async (req, res) => { //auth,
   try {    
+    const student = await Student.find()      
+      if (!student) {        
+        throw new Error()
+      }      
+      res.status(200).send(student)      
+  } catch (e) {      
+      res.status(404).send(e)
+  }
+})
+
+// Get Student By ID
+router.get('/students/:id', async (req, res) => { //auth,
+  try { 
     const student = await Student.findById(req.params.id)      
       if (!student) {        
         throw new Error()
